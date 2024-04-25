@@ -14,6 +14,12 @@
             <h3>Here is where the question will display - js function</h3>
         </div>
 
+        <div id="language-selector">
+            <button onclick="highlightSection(1)">Java</button>
+            <button onclick="highlightSection(2)">Python </button>
+            <button onclick="highlightSection(3)">C</button>
+        </div>
+
         <div id="answer">
             <form id="codeForm" onsubmit="checkCode(event);">
                 <textarea id="code" name="code" placeholder="Enter your code here..."></textarea>
