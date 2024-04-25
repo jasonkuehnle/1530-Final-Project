@@ -1,8 +1,19 @@
-const question = "Create an int array called arr in Java that initializes an empty array of size 10.";
-const answer = "int[] arr = new int[10];";
+const question = "Create an int array called arr that initializes an empty array of size 10.";
+const java_answer = "int[] arr = new int[10];";
+const python_answer = "arr = [0] * 10";
+const c_answer = "int arr[10] = {0};";
+
+function highlightSection(section) {
+    document.querySelectorAll('#language-selector button').forEach(btn => {
+      btn.style.backgroundColor = 'lightcyan';
+    });
+
+    const selectedBtn = document.querySelector(`#language-selector button:nth-child(${section})`);
+    selectedBtn.style.backgroundColor = 'lightblue';
+  }
 
 function checkAnswer(submittedAnswer) {
-    return submittedAnswer.trim().toLowerCase() === answer.toLowerCase();
+    return submittedAnswer.trim().toLowerCase() === java_answer.toLowerCase();
 }
 
 function displayQuestion() {

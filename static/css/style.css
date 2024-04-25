@@ -55,3 +55,24 @@ input[type="submit"]:hover {
     font-family: 'Courier New', monospace;
     font-size: 16px;
 }
+
+/* button {
+    border-radius: 5px;
+    background-color: lightcyan;
+    margin: 0px;
+    size: 20px;
+} */
+
+#language-selector {
+display: flex; /* Use flexbox to align buttons horizontally */
+}
+
+#language-selector button {
+flex: 1;
+margin: 0; /* Remove default margin */
+/* border: 1px 0.5px solid black; Remove border */
+border: 1px solid black;
+border-radius: 0px; /* Apply border-radius */
+padding: 10px; /* Adjust padding to increase button size */
+background-color: lightcyan;
+}
